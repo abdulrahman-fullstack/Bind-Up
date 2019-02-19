@@ -1,0 +1,358 @@
+*{ font-family:sans-serif,serif ; margin:0; padding:0; box-sizing: border-box; outline:none; }
+
+body{width:100%;height:100vh; overflow:hidden;}
+
+/*------    HEADER STYLING STARTS HERE    ------*/
+div.wrap{width: inherit;height:100vh;}
+div.clearfix{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.hdr-wrap{
+	position: relative;
+	width:inherit;
+	height:60px;
+	overflow:hidden; 
+}
+div.header{
+	padding:10px 3.74%;
+	height:60px;
+	width:inherit;
+	background:#244055/*rgba(17,35,47,1)*/;
+	/*background: -webkit-linear-gradient(left, #1e3648 0%, #4980a7 100%);*/
+	position: fixed;
+	top:0;
+	z-index:10;
+}
+div.header header {
+	font-size:40px;
+	/*height:40px;*/
+	/*margin-left:100px;*/
+	padding:5px 0;
+	float:left;
+	position: relative;
+	top:-12px;
+}
+div.header header > a {
+	font-family: montez;
+	color:white;
+	text-decoration:none;
+}
+div.header input[type="search-people"]{
+	outline:none;
+	border:none;
+	border-radius:30px;
+	transition: all 0.4s;
+	padding:5px;
+	font-size:17px;
+	background:white;
+	margin:5px;
+	width:160px;
+	float:left;
+	position: relative;
+	left:70px;
+}
+div.header input[type="search-people"]:focus{
+	border-radius:2px;
+	width:350px;
+}
+div.header > ul.nav {
+	list-style-type: none;
+}
+div.header > ul.nav  li {
+	float:right;
+	font-size: 17px;
+	margin:5px 0.99%;
+	color:white;
+	text-decoration: none;
+	padding:5px;
+	border-radius:2px;
+	transition: all 0.2s;
+	position: relative;
+
+}
+div.header > ul.nav > li:hover {
+	cursor:pointer;
+	background:#e9e9e9/*rgba(105,121,136,0.7)*/;
+	color:#244055;
+}
+div.header > ul.nav > li.active {
+	background:#e9e9e9/*rgba(105,121,136,0.7)*/;
+	color:#244055;
+}
+div.header > ul.nav  li.menu{
+	padding-right: 20px;
+}
+div.header > ul.nav > li.menu > span.menu-down {		/*	menu down arrow	*/
+	opacity:0;
+	transform: scale(0.66 , 0.66);
+	position: absolute;
+	top:6px;
+	right:5.7%;
+	color:#244055;
+	transition:opacity 0.3s;
+	transition:transform 0.2s;
+
+}
+div.header > ul.nav > li.menu:hover > span.menu-down{ 	/*	menu down arrow	*/
+	opacity:0.7;
+}
+div.header > ul.nav > li.menu > span.arrow-down{		/*	menu down arrow	*/
+	opacity:0;
+}
+div.header > ul.nav > li.menu > span.arrow-up{			/*	menu down arrow	*/
+	opacity: 0.7;
+	transform:rotateX(180deg) scale(0.66 , 0.66);
+	top:5;
+}
+div.sub-menu {       								/* hanging sub menu */
+	display:none;
+	position: absolute;
+	top:60px;
+	right:3%;
+	background:#f6f6f6/*rgba(101,121,140,1)*/;
+	border-radius:1px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+div.sub-menu >ul.hanging-sub-menu {   				/* hanging sub menu */
+	list-style:none;
+	z-index:998;
+}
+div.sub-menu >ul.hanging-sub-menu > li > a {   		/* hanging sub menu */
+	list-style-type: none;
+	padding: 8px 20px;
+	border-radius:2px;
+	transition:all 0.3s;
+	color:rgba(17, 35, 47,1);
+	text-decoration: none;
+	display:block;
+	/*z-index: 999;*/
+}
+div.sub-menu >ul.hanging-sub-menu > li > a:hover{	/* hanging sub menu */
+	background:#244055;
+	color:white;
+}
+div.header > ul.nav > li.menu , div.header > div.sub-menu , span.menu-down {
+	z-index:997;
+}
+
+
+/*-------  HEADER STYLING ENDS HERE  --------*/
+
+
+/*--------  SIDE-PANE STYLE STARTS HERE	 --------*/
+
+div.spo{
+	position: relative;
+	padding:10px 0;
+	width:15%;
+	height:calc(100% - 60px);
+	background:rgba(0,0,0,0.04);
+	border-right:1px solid #d0cdcd;
+	float:left;
+	display:block;
+}
+div.side-pane{
+	width:100%;
+	position: absolute;
+	display: block;
+}
+div.side-pane div{
+	position: relative;
+	width:100%;
+}
+div.side-pane div a{
+	position: relative;
+	width: 100%;
+	display:block;
+	text-decoration: none;
+	padding:12px 20px;
+	font-size:16px;
+	color:#426077;
+	border-bottom:1px solid rgba(0,0,0,0.08);
+	letter-spacing:1px;
+	cursor:pointer;
+}
+div.side-pane div.cur{
+	background: rgba(255,255,255,0.9);
+}
+div.side-pane div span.active{
+	position: absolute;
+	top:0;
+	left:0;
+	width:10px;
+	height:100%;
+	display:block;
+	background:#24b7e4;
+}
+
+/*--------  SIDE-PANE STYLE ENDS HERE	 --------*/
+
+
+
+/*  -------- GLOBAL CONTENT STARTS HERE --------  */
+
+
+div.global-cont{
+	margin:inherit;
+	width:85%;
+	height:calc(100% - 60px);
+	background:white;
+	/*background:#f5f7f8;*/
+	/*background: #e9ebee;*/
+	position: relative;
+	overflow-x: hidden;
+	display:block;
+}
+.cont-block{
+	width:100%;
+}
+.content{
+	width:100%;
+	padding-left:10px;
+	display: flex;
+	overflow:hidden;
+}
+.msg-container{
+	width:70%;
+	height:100%;
+	position: relative;
+	border:1px solid #d0cdcd;
+}
+.msg-container .inm{
+	position: absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background-image:url('../images/msg_bg.png');
+	opacity:.08;
+}
+.msg-container .sending-area{
+	width:100%;
+	padding:10px;
+	position: absolute;
+	bottom:0;
+	background:#d7d4d4;
+}
+.msg-container .sending-area textarea{
+	font-size:20px;
+	resize: none;
+	border:none;
+	padding:8px;
+	position: relative;
+	left:15%;
+	width:73%;
+}
+.msg-container .sending-area .send{
+	padding:7px 10px;
+	position: absolute;
+	top:50%;
+	right:2%;
+	font-size: 1.3em;
+	transform:translateY(-50%);
+	border:none;
+	border-radius:2px;
+	background:#2080c4;
+	color:white;
+	cursor:pointer;
+}
+.msg-container .msgs{
+	width:100%;
+	height:calc(100% - 59px);
+	/*background:rgba(231, 172, 4, 0.05);*/
+	background: rgba(0,0,0,0.08);
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.msg-container .msgs .msg {
+	padding:5px ;
+}
+.msg-container .msgs .msg span{
+	padding:7px 12px;
+	background:white;
+	color:#4c478d;
+	display: inline-block;
+	max-width: 500px;
+	overflow-wrap: break-word;	
+}
+.msg-container .msgs .logusr span{
+	position: relative;
+	left:100%;
+	transform:translateX(-100%);
+	border-radius:15px 5px;
+}
+.msg-container .msgs .usr span{
+	position: relative;
+	left:0;
+	border-radius:5px 15px;
+}
+.conversation{
+	width:30%;
+	height:100%;
+	background:white;
+	overflow-y: auto;
+	position: relative;
+}
+.conversation .conv{
+	cursor:pointer;
+}
+.conversation .conv > div{
+	position: relative;
+	margin:0 10px;
+	padding:10px;
+	/*background:yellow;*/
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.conversation .conv img {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	box-shadow: 0 0 5px #c6c5c5;
+}
+.conversation .conv .user-name{
+	position: absolute;
+	top:50%;
+	font-family: HelveticaNeueW01-Thin,sans-serif;
+	letter-spacing: 1px;
+	font-size:1.3em;
+	color:#07314f;
+	text-shadow:0 0 .5px #07314f;
+	transform:translateY(-50%);
+	left:65px;
+}
+.conversation .new-conv{
+	width:50px;
+	height:50px;
+	position: fixed;
+	bottom:30px;
+	right:30px;
+	color:white;
+	background:#4c478d;
+	border-radius:50%;
+	cursor:pointer;
+}
+.conversation .new-conv div{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+.conversation .new-conv div span{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size:2em;
+}
+.conversation .new-conv.back div{
+	position: relative;
+	font-size: .7em;
+}
+.conversation .new-conv.back div span{
+	position: absolute!important;
+	top:45%;
+	left:47.5%;
+	/*transform:translate(-50%,-50%);*/
+}
+.active{
+	background:rgba(0,0,0,0.1);
+}

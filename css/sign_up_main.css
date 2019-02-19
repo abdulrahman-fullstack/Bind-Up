@@ -1,0 +1,123 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+body{
+	font-family:HelveticaNeueW01-Thin,sans-serif;
+	letter-spacing: 2px;
+}
+div.wrap{
+	position: relative;
+	top:0;
+	min-width:660px;
+}
+div.wrap h1{
+	font-weight: 100;
+	font-size: 50px;
+	color:#20303c;
+	text-align:center;
+	margin-top:20px;
+}
+div.sign-up{
+	position: relative;
+	top:0;
+	left:43%;
+	transform:translateX(-100%);
+	/*background: #e1e1e1;*/
+	padding:20px;
+	width:300px;
+	margin:0;
+}
+div.sign-up form input {
+	font-family:HelveticaNeueW01-Thin,sans-serif;
+	font-size: 18px;
+	color:#606060;
+	border:none;
+	border-radius:3px;
+	border:1px solid #e9e9e9;
+	/*border-bottom:2px solid #c3c3c3; */
+	padding:7px 10px;
+	margin:7px 5px;
+	outline: none;
+	transition:all 0.2s;
+}
+div.sign-up form input:not([type=submit]) {
+	width:250px;
+}
+div.sign-up form p input[type="submit"]{
+	border:none;
+	background:rgba(101,121,136,1); 
+	color:white;
+	font-weight: bold;
+	letter-spacing: inherit;
+}
+div.sign-up form input::placeholder{
+	/*color:blue;*/
+	font-weight: 100;
+}
+div.sign-up input:hover{
+	/*border-bottom-color:#d3d3d3;	*/
+	box-shadow:0 3px 5px #c3c3c3;
+}
+div.sign-up input[type="submit"]:hover{
+	box-shadow:0 5px 5px #c3c3c3;	
+}
+div.sign-up input[type="text"]:focus,
+div.sign-up input[type="password"]:focus,
+div.sign-up input[type="email"]:focus {
+	color:#20303c;
+	box-shadow:0 5px 5px #d3d3d3;
+	font-weight: 600;
+	/*border-bottom-color:rgba(101,121,136,1);*/
+}
+div.sign-up p label {
+	margin:10px 5px 0 5px;
+	display:block;
+	font-weight: 600;
+	color:#45515b;
+}
+div.sign-up p label.gender-lbl{
+	display:inline;
+}
+div.sign-up p select {
+	font-size:15px;
+	padding:5px;
+	color:#606060;
+	border:none;
+	border-radius:3px;
+	border:0.2px solid #e9e9e9;
+	outline:none;
+	appearance:none;
+	margin:10px 5px;
+	transition: all 0.2s;
+}
+div.sign-up p select:focus{
+	border:0.2px solid rgba(101,121,136,1);
+	box-shadow:0 0 3px rgba(101,121,136,1);
+}
+div.sign-up form p{
+	position: relative;
+}
+div.sign-up form p span.show img {
+	width:18px;
+	height:20px;
+	position: absolute;
+	top:14.5px;
+	left:228px;
+}
+.vb{
+	position: absolute;
+	top:55%;
+	left:50%;
+	width:2px;
+	height:400px;
+	background:rgba(0,0,0,0.2);
+	transform: translate(-50%,-50%);
+}
+.moto{
+	position: absolute;
+	top:50%;
+	left:55%;
+	transform: translateY(-50%);
+	font-size: 4em;
+	color:#254257;
+	opacity:.76;
+}

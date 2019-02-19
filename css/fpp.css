@@ -1,0 +1,62 @@
+.content{
+	width: 80%;
+	margin: 20px auto;
+}
+.content .peoples{
+	display: flex;
+	flex-wrap: wrap;
+}
+.content .peoples .people{
+	width:49%;
+	height:60px;
+	margin: .5%;
+	background:rgba(0,0,0,0.05);
+	position: relative;
+}
+.content .peoples .people .name img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	box-shadow:0 0 5px #c6c5c5;
+	margin:10px;	
+}
+.content .peoples .people .name a{
+	position: absolute;
+	left:60px;
+	top:50%;
+	color:rgba(0,0,0,0.7);
+	text-decoration:none;
+	transform: translateY(-50%);
+	font-size: 1.25em;
+}
+.content .peoples .people .flw-cont{
+	position: absolute;
+	right:20px;
+	top:50%;
+	transform: translateY(-50%);
+}
+.follow-btn{
+	border:none;
+	padding:5px 10px;
+	cursor: pointer;
+	border-radius: 2px;
+	letter-spacing: .3px;
+	transition:all 0.3s;
+}
+.content .peoples .people .Follow{
+	background:white;
+	color:#575575;
+	border:1px solid #aaa;
+}
+.content .peoples .people .Unfollow{
+	background:salmon;
+	color:white;
+	border:1px solid salmon;
+}
+.msg{
+	width:100%;
+	padding:10px 0;
+	font-size:2em;
+	color:#244055;
+	text-align: center;
+}

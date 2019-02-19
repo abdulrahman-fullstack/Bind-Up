@@ -1,0 +1,387 @@
+*{ font-family:sans-serif,serif ; margin:0; padding:0; box-sizing: border-box; outline:none; }
+
+body{width:100%; overflow-x:hidden;}
+
+
+/*------    HEADER STYLING STARTS HERE    ------*/
+div.wrap{width: inherit;height:100vh;}
+div.clearfix{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.hdr-wrap{
+	position: relative;
+	width:inherit;
+	height:60px;
+	overflow:hidden; 
+}
+div.header{
+	padding:10px 3.74%;
+	height:60px;
+	width:inherit;
+	background:#244055/*rgba(17,35,47,1)*/;
+	/*background: -webkit-linear-gradient(left, #1e3648 0%, #4980a7 100%);*/
+	position: fixed;
+	top:0;
+	z-index:10;
+}
+div.header header {
+	font-size:40px;
+	/*height:40px;*/
+	/*margin-left:100px;*/
+	padding:5px 0;
+	float:left;
+	position: relative;
+	top:-12px;
+}
+div.header header > a {
+	font-family: montez;
+	color:white;
+	text-decoration:none;
+}
+div.header input[type="search-people"]{
+	outline:none;
+	border:none;
+	border-radius:30px;
+	transition: all 0.4s;
+	padding:5px;
+	font-size:17px;
+	background:white;
+	margin:5px;
+	width:160px;
+	float:left;
+	position: relative;
+	left:70px;
+}
+div.header input[type="search-people"]:focus{
+	border-radius:2px;
+	width:350px;
+}
+div.header > ul.nav {
+	list-style-type: none;
+}
+div.header > ul.nav  li {
+	float:right;
+	font-size: 17px;
+	margin:5px 0.99%;
+	color:white;
+	text-decoration: none;
+	padding:5px;
+	border-radius:2px;
+	transition: all 0.2s;
+	position: relative;
+
+}
+div.header > ul.nav > li:hover {
+	cursor:pointer;
+	background:#e9e9e9/*rgba(105,121,136,0.7)*/;
+	color:#244055;
+}
+div.header > ul.nav > li.active {
+	background:#e9e9e9/*rgba(105,121,136,0.7)*/;
+	color:#244055;
+}
+div.header > ul.nav  li.menu{
+	padding-right: 20px;
+}
+div.header > ul.nav > li.menu > span.menu-down {		/*	menu down arrow	*/
+	opacity:0;
+	transform: scale(0.66 , 0.66);
+	position: absolute;
+	top:6px;
+	right:5.7%;
+	color:#244055;
+	transition:opacity 0.3s;
+	transition:transform 0.2s;
+
+}
+div.header > ul.nav > li.menu:hover > span.menu-down{ 	/*	menu down arrow	*/
+	opacity:0.7;
+}
+div.header > ul.nav > li.menu > span.arrow-down{		/*	menu down arrow	*/
+	opacity:0;
+}
+div.header > ul.nav > li.menu > span.arrow-up{			/*	menu down arrow	*/
+	opacity: 0.7;
+	transform:rotateX(180deg) scale(0.66 , 0.66);
+	top:5;
+}
+div.sub-menu {       								/* hanging sub menu */
+	display:none;
+	position: absolute;
+	top:60px;
+	right:3%;
+	background:#f6f6f6/*rgba(101,121,140,1)*/;
+	border-radius:1px;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+div.sub-menu >ul.hanging-sub-menu {   				/* hanging sub menu */
+	list-style:none;
+	z-index:998;
+}
+div.sub-menu >ul.hanging-sub-menu > li > a {   		/* hanging sub menu */
+	list-style-type: none;
+	padding: 8px 20px;
+	border-radius:2px;
+	transition:all 0.3s;
+	color:rgba(17, 35, 47,1);
+	text-decoration: none;
+	display:block;
+	/*z-index: 999;*/
+}
+div.sub-menu >ul.hanging-sub-menu > li > a:hover{	/* hanging sub menu */
+	background:#244055;
+	color:white;
+}
+div.header > ul.nav > li.menu , div.header > div.sub-menu , span.menu-down {
+	z-index:997;
+}
+
+
+/*-------  HEADER STYLING ENDS HERE  --------*/
+
+
+/*--------  SIDE-PANE STYLE STARTS HERE	 --------*/
+
+div.spo{
+	position: relative;
+	padding:10px 0;
+	width:15%;
+	height:calc(100% - 60px);
+	background:rgba(0,0,0,0.04);
+	border-right:1px solid rgba(0,0,0,0.04);
+	float:left;
+	display:block;
+}
+div.side-pane{
+	width:100%;
+	position: absolute;
+	display: block;
+}
+div.side-pane div{
+	position: relative;
+	width:100%;
+}
+div.side-pane div a{
+	position: relative;
+	width: 100%;
+	display:block;
+	text-decoration: none;
+	padding:12px 20px;
+	font-size:16px;
+	color:#426077;
+	border-bottom:1px solid rgba(0,0,0,0.08);
+	letter-spacing:1px;
+	cursor:pointer;
+}
+div.side-pane div.cur{
+	background: rgba(255,255,255,0.9);
+}
+div.side-pane div span.active{
+	position: absolute;
+	top:0;
+	left:0;
+	width:10px;
+	height:100%;
+	display:block;
+	background:#24b7e4;
+}
+
+/*--------  SIDE-PANE STYLE ENDS HERE	 --------*/
+
+
+
+/*  -------- GLOBAL CONTENT STARTS HERE --------  */
+
+
+div.global-cont{
+	margin:inherit;
+	width:85%;
+	height:calc(100% - 60px);
+	background:white;
+	/*background:#f5f7f8;*/
+	/*background: #e9ebee;*/
+	position: relative;
+	overflow-x: hidden;
+	display:block;
+}
+.cont-block{
+	width:100%;
+}
+.content{
+	width:70%;
+	padding:10px 20px;
+}
+.content .post-block{
+	background:#f5f7f8;
+}
+.content .post-block .post-area{
+	position: relative;
+}
+.content .post-block .post-area .ph{
+	position: absolute;
+	color:rgba(0,0,0,0.3);
+	z-index: 0;
+}
+.content .post-block .post-area .pc{
+	position: relative;
+	min-height:80px;
+	z-index: 1;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+	transition:all 0.35s;
+}
+.content .post-block .post-area .pc:focus{
+	
+	border-bottom:1px solid rgba(43, 127, 190, 0.8);
+}
+.content .post-block .post-area .pd {
+	padding: 10px 0;
+	margin:0 15px;
+	font-size:25px;
+	font-weight: 100;
+	font-family: HelveticaNeueW01-Thin,sans-serif;
+	letter-spacing: 1px;
+}
+.content .post-block .ps{
+	margin:0 15px;
+	padding:10px 0;
+}
+.content .post-block .post-area .hidden{
+	display:none;
+}
+#pstbtn{
+	padding:7px 20px;
+	font-size: 1em;
+	color:white;
+	background:rgba(36,64,85,0.8);
+	border:none;
+	border-radius:20px;
+	letter-spacing: .8px;
+	cursor: pointer;
+}
+.like-btn{
+	padding:3px 10px;
+	margin:10px 0;
+}
+.post{
+	margin:10px 0;
+	padding:10px;
+	background:rgba(255,255,255,0.9);
+}
+.post .user{
+	margin:10px 0;
+	position: relative;
+}
+.post .user .img {
+	float:left;
+	display:inline;
+	position: absolute;
+	top:-5px;
+}
+.post .user .img img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	box-shadow: 0 0 5px #c6c5c5;
+}
+.post .user h3 {
+	position: relative;
+	left:60px;
+}
+.post .user h3 a{
+	text-decoration: none;
+	color:#244055;
+}
+.post .user .time{
+	font-size: 11px;
+	color:#41404a;
+	letter-spacing: .8px;
+	position: relative;
+	left:60px;
+	margin-bottom: 20px;
+}
+.post .cont{
+	/*background:rgba(55, 85, 107, 0.9);*/
+	background:rgba(0,0,0,0.05);
+	color:#575575;
+	letter-spacing:.5px;
+	padding:5px 5px 5px 10px;
+	/*border-left:5px solid #FDAF6C;*/
+	border-left:5px solid rgba(102, 202, 229, 1);
+	border-radius:5px;
+	clear:both;
+}
+.post .ops .like-btn{
+	border:none;
+	width:55px;
+	padding:5px 0;
+	border-radius:1.5px;
+	cursor:pointer;
+	transition:all 0.15s;
+}
+.post .ops .lk{
+	background:rgba(0,0,0,0.08);
+	color:#244055;
+}
+.post .ops .lkd{
+	/*background:#F78421;*/
+	/*background:rgba(218, 5, 43, 1);*/
+	/*background: #d72487;*/
+	background: #d7246e;
+	color:white;
+}
+.post .ops .pl{
+	color:#565561;
+	font-size:13px;
+}
+.notification{
+	width: 24.5%;
+    height: calc( 100vh - 80px );
+    position: fixed;
+    top: 70px;
+    background:rgba(0,0,0,0.02);
+    right:1.7%;
+    overflow-y: auto;
+}
+.notification .notify-list{
+	width:100%;
+	height:100%;
+}
+.msg{
+	color:#244055;
+	text-align: center;
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+.notification .notify-list .ntfs{
+	padding:10px;
+	background:#eee9;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+	cursor:pointer;
+	transition: all 0.3s;
+	display:flex;
+	position: relative;
+}
+.notification .notify-list .ntfs:first-child{
+	border-top:1px solid rgba(0,0,0,0.1);
+	border-radius:inherit;
+}
+.notification .notify-list .ntfs .not-msg{
+	position: absolute;
+	top:50%;
+	left:60px;
+	transform: translateY(-50%);
+}
+.notification .notify-list .ntfs:hover{
+	background:#eaeaea;
+}
+.pro-img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+
+
+
+
+/*  -------- GLOBAL CONTENT ENDS HERE --------  */

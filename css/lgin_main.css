@@ -1,0 +1,101 @@
+*{margin:0;padding:0;box-sizing: border-box; }
+
+body{
+	font-family:HelveticaNeueW01-Thin,sans-serif;
+	letter-spacing: 2px;
+}
+div.wrap{
+	position: relative;
+}
+.wrap .title h1{
+	font-weight: 100;
+	font-size: 70px;
+	line-height: 70px;
+	color:#20303c;
+	text-align:center;
+	position: relative;
+	width:100%;
+	margin:60px auto 0 auto;
+}
+.wrap .title .sop{
+	text-align: center;
+	position: absolute;
+	top:85px;
+	left:50%;
+	transform: translateX(-50%); 
+}
+div.lgnfrm{
+	padding:20px;
+	margin-top:60px;
+	width:400px;
+	min-width: 200px;
+	float: left;
+	position: relative;
+	left:20%;
+}
+div.lgnfrm form input:not([type=submit]) {
+	width:250px;
+}
+div.lgnfrm form input {
+	font-family:HelveticaNeueW01-Thin,sans-serif;
+	font-size: 24px;
+	color:#606060;
+	border:none;
+	border-radius:3px;
+	border:1px solid #e9e9e9;
+	padding:7px 10px;
+	margin:15px 5px;
+	outline: none;
+	transition:all 0.2s;
+}
+div.lgnfrm form p input[type="submit"]{
+	border:none;
+	background:rgba(101,121,136,1); 
+	color:white;
+	font-weight: bold;
+	letter-spacing: inherit;
+}
+div.lgnfrm form input::placeholder{
+	font-weight: 100;
+}
+div.lgnfrm input:hover{
+	box-shadow:0 4px 5px #c3c3c3;
+}
+div.lgnfrm input[type="submit"]:hover{
+	box-shadow:0 5px 5px #c3c3c3;	
+}
+div.lgnfrm input[type="password"]:focus,
+div.lgnfrm input[type="email"]:focus {
+	color:#20303c;
+	box-shadow:0 6px 6px #d3d3d3;
+	font-weight: 600;
+}
+div.lgnfrm form p{
+	position: relative;
+}
+div.lgnfrm form p span.show img {
+	width:18px;
+	height:20px;
+	position: absolute;
+	top:26.5px;
+	left:228px;
+}
+div.vb{
+	width:2px;
+	height:260px;
+	background: #b4afaf;
+	position: absolute;
+	top:0;
+	right:0;
+	float: left;
+}
+div.moto{
+	clear:both;
+	position:absolute;
+	margin-top:90px;
+	left:55%;
+	font-family: HelveticaNeueW01-Thin,sans-serif;
+	font-size: 3.3em;
+	color:#254257;
+	opacity:.76;
+}

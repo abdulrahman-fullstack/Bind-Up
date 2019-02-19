@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Mon Oct 24 17:37:40 2016
+ By ,,,
+Copyright Dave Gandy 2016. All rights reserved.
+</metadata>
+<defs>
+    <font id="FontAwesome" horiz-adv-x="1536" >
+        <font-face 
+            font-family="FontAwesome"
+            font-weight="400"
+            font-stretch="normal"
+            units-per-em="1792"
+            panose-1="0 0 0 0 0 0 0 0 0 0"
+            ascent="1536"
+            descent="-256"
+            bbox="-1.02083 -256.962 2304.6 1537.02"
+            underline-thickness="0"
+            underline-position="0"
+            unicode-range="U+0020-F500"
+        />
+            <glyph glyph-name="home" unicode="&#xf015;" horiz-adv-x="1664" 
+                d="M1408 544v-480q0 -26 -19 -45t-45 -19h-384v384h-256v-384h-384q-26 0 -45 19t-19 45v480q0 1 0.5 3t0.5 3l575 474l575 -474q1 -2 1 -6zM1631 613l-62 -74q-8 -9 -21 -11h-3q-13 0 -21 7l-692 577l-692 -577q-12 -8 -24 -7q-13 2 -21 11l-62 74q-8 10 -7 23.5t11 21.5
+                l719 599q32 26 76 26t76 -26l244 -204v195q0 14 9 23t23 9h192q14 0 23 -9t9 -23v-408l219 -182q10 -8 11 -21.5t-7 -23.5z" 
+            />
+
+
+    </font>
+</defs></svg>
