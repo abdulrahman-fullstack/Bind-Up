@@ -1,10 +1,14 @@
 # Bind-Up
-Social Media Application in PHP
+### A Simple Social Media Application
 
-Programming language  - PHP
-Database              - MySql
+## PreRequisites
+1. PHP  
+2. MySql  
+  
+Or you can just install XAMPP to run this project.  
 
-Open 'db' folder and run the script in your mysql database
-and run the index.php in the browser 
-
-note: make sure you have created a virtual server for the Application directory path
+## Configuring the Application
+Create a DataBase in MySql.  
+Open **classes/DB.php** file and change your Hostname, DataBase name, DataBase Username and Password.  
+And then open **db** folder and then run the scripts inside **bindup.sql** file in your MySql Database to create the table structures.  
+And all setted now you need to **create a vistual server for the Project's directory**. And then you can run the project using the virtual server which you have created
